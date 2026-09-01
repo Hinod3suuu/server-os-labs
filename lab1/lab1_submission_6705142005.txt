@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705142005
+timestamp: 2026-09-01T04:02:57Z
+hostname: ubuntu
+---[user: getent passwd]---
+alice486:x:1002:1003::/home/alice486:/bin/bash
+---[group: getent group]---
+qa:x:1004:alice486
+---[user-in-group: id]---
+uid=1002(alice486) gid=1003(alice486) groups=1003(alice486),1004(qa)
+---[file stat: home file mode/owner]---
+/home/alice486/report_5923.txt mode=755 owner=alice486 group=qa
+---[sshd effective config]---
+port 2504
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: 076be0527cb485dec3f67e09487d85d72728c30a73c599c31a564f11b747f62c
+===END LAB1 SUBMISSION===
